@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>在线聊天室</title>
+    <style>
+        #chat {
+            border: 1px solid black;
+            height: 300px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label for="username">用户名:</label>
+    <input type="text" id="username" />
+    <button onclick="connect()">连接</button>
+</div>
+<div id="chat"></div>
+<input type="text" id="message" />
+<button onclick="sendMessage()">发送</button>
+
+<script>
+    var websocket;
+
+    function connect() {
+        var username = document.getElementById("username").value;
+        websocket = new WebSocket("ws://localhost:8080/chat/" + username);
+
+        websocket.onmessage = function(event) {
+            var chat = document.getElementById("chat");
+            chat.innerHTML += event.data + "<br/>";
+        };
+    }
+
+    function sendMessage() {
+        var message = document.getElementById("message").value;
+        websocket.send(message);
+    }
+</script>
+</body>
+</html>

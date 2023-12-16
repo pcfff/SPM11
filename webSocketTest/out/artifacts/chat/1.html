@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天</title>
+</head>
+<body>
+<div id="chatArea"></div>
+<input type="text" id="messageInput">
+<button onclick="sendMessage()">发送</button>
+
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var chatWithUser = urlParams.get('user'); // 从 URL 获取聊天对象的用户名
+    var websocket;
+
+    function connectWebSocket() {
+        websocket = new WebSocket("ws://localhost:8080/chat/1" + chatWithUser);
+
+        websocket.onmessage = function(event) {
+            document.getElementById("chatArea").innerHTML += event.data + "<br/>";
+        };
+    }
+
+    function sendMessage() {
+        var message = document.getElementById("messageInput").value;
+        websocket.send(chatWithUser + ":" + message); // 发送消息格式: "接收者:消息"
+    }
+
+    connectWebSocket();
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息列表</title>
+</head>
+<body>
+<div id="chatList"></div>
+
+<script>
+    var userChatList = {
+        // 示例数据结构，实际应从服务器获取
+        "alice": { unread: true, online: true },
+        "bob": { unread: true, online: false },
+        "carol": { unread: false, online: false }
+    };
+
+    function renderChatList() {
+        var chatListDiv = document.getElementById('chatList');
+        chatListDiv.innerHTML = '';
+
+        // 排序逻辑同前
+        var sortedUsers = Object.keys(userChatList).sort(/* 排序逻辑 */);
+
+        sortedUsers.forEach(user => {
+            var userDiv = document.createElement('div');
+            userDiv.innerHTML = user + (userChatList[user].online ? ' (在线)' : ' (离线)');
+            userDiv.style.color = userChatList[user].unread ? 'red' : 'black';
+            userDiv.onclick = function() { openChat(user); };
+            chatListDiv.appendChild(userDiv);
+        });
+    }
+
+    function openChat(username) {
+        // 重定向到聊天页面，并传递选中的用户名
+        window.location.href = 'chat.html?user=' + username;
+    }
+
+    renderChatList();
+</script>
+</body>
+</html>

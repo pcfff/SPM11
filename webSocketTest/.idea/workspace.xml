@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="chat" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b7b2a4f3-9f96-4735-b65e-af03dbf4b79b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/.idea/artifacts/connection_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/out/artifacts/connection_war_exploded/WEB-INF/classes/beans/Area.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/out/artifacts/connection_war_exploded/WEB-INF/classes/servlet/ListAreaServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/out/artifacts/connection_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/out/artifacts/connection_war_exploded/ajax1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/out/production/connection/servlet/ListAreaServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection between province and area/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection/.idea/libraries/fastjson_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ajax/connection/connection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/common-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/common-framework/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/common-framework/target/common-framework-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/common-framework/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-admin/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-admin/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-blog/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-blog/src/main/java/com/paranoid/ParanoidApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-blog/target/classes/org/example/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-blog/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-blog/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Blog/paranoid-blog/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MergeTest/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MergeTest/MergeTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MergeTest/out/production/MergeTest/FileInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MergeTest/src/FileInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybaits-001-introduction/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybaits-001-introduction/src/main/java/mybaitslearning/test/MybatisIntroductionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybaits-001-introduction/src/main/resources/CarMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybaits-001-introduction/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-002-crud/src/main/java/myLearning/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-002-crud/target/classes/CarMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-002-crud/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/src/main/java/com/paranoid/pojo/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/target/classes/CarMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/target/classes/com/paranoid/mapper/CarMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/target/classes/com/paranoid/pojo/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis-003-crud2/target/mybatis-003-crud2-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mybatis/mybatis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SPM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SPM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SPM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SPM/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SPM/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/.idea/Spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/dynamic-proxy-jdk/src/main/java/com/paranoid/proxy/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/dynamic-proxy-jdk/src/main/java/com/paranoid/proxyclient/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/dynamic-proxy-jdk/target/classes/com/paranoid/proxy/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/dynamic-proxy-jdk/target/classes/com/paranoid/proxyclient/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/SpringBoot-ssmp/src/main/java/com/example/springbootssmp/SSMPApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/SpringBoot-ssmp/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/SpringBoot-ssmp/src/test/java/com/example/springbootssmp/SpringBootSsmpApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asm/src/main/java/com/itheima/TestProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asm/target/classes/com/itheima/$Proxy0Dump.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../asm/target/classes/com/itheima/Foo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/chatroom.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/WEB-INF/classes/pojo/Dialogue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/WEB-INF/classes/servlet/JudgePicServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/WEB-INF/lib/fastjson-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/chat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/chatting.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/css/1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/i1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/img/cats/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/img/cats/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/img/dogs/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/img/tigers/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/img/tigers/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/js/exit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/artifacts/chatroom_war_exploded/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/production/chatroom/pojo/ActiveUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/production/chatroom/servlet/ExitServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/production/chatroom/servlet/ImageServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/out/production/chatroom/servlet/JumpToChatServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/src/pojo/ActiveUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/src/pojo/Dialogue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/img/cats/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/img/cats/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/img/dogs/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/img/dogs/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/img/lions/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/img/tigers/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/js/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatroom/web/t1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_01/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_01/target/classes/builddef.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_01/target/classes/com/itheima/aop/MyAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_02/src/main/java/com/itheima/aop/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_02/src/main/java/com/itheima/service/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_02/target/classes/com/itheima/aop/MyAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6_advanced_aspectj_02/target/classes/com/itheima/service/MyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/.idea/artifacts/elAndJstl_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/.idea/libraries/jsp_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/elAndJstl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/elAndJstl/src/main/resources/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/elAndJstl/target/classes/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/elAndJstl/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/elAndJstl/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/out/artifacts/elAndJstl_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/out/artifacts/elAndJstl_war_exploded/WEB-INF/classes/com/paranoid/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/out/artifacts/elAndJstl_war_exploded/WEB-INF/classes/com/paranoid/servlet/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/out/artifacts/elAndJstl_war_exploded/userList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/.idea/libraries/apache_tomcat_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/homework1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/out/artifacts/homework1_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/out/artifacts/homework1_war_exploded/image/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/out/artifacts/homework1_war_exploded/image/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/web/image/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/web/js/slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework1/web/slide_picture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/homework2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/servlet/Analysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/src/main/java/Dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/src/main/java/Dao/impl/MessageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/src/main/java/controller/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/src/main/java/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/target/classes/Dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/target/classes/Dao/impl/MessageImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/target/classes/Dao/impl/UserImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/target/classes/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/target/test-classes/Impl/ImplTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/homework5/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb/out/production/homework2/pojo/People.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb1/javaweb1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb1/out/artifacts/servlet01_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb1/servlet01/servlet01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb1/servlet01/web/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb1/webtest/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven01/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pull2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pullone/pullone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a01/A01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a01/UserRegisteredEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a02/A02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a02/TestBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a03/A03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a03/TestProcessOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a04/A04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a05/A05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a05/AtBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a05/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a05/component/Bean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a06/A06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a06/MyConfig2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a07/A07_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a08/BeanForApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a08/sub/F3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a13/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a15/A15_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a20/A20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a20/Controller1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a20/MyRequestMappingHandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a20/TokenArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a20/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a20/YmlReturnValueHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a21/A21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a22/A22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a23/MyDateFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a23/TestDataBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a23/TestFieldAccessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a23/TestServletDataBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a23/sub/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a23/sub/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a23/sub/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a26/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a29/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a32/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a33/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a39/A39_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a39/sub/Bean7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a40/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a41/A41_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a41/A41_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a42/A42_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a43/Bean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a44/Bean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a45/Bean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a45/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a48/A48_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a48/A48_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/com/itheima/a49/A49.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/org/springframework/aop/framework/autoproxy/A17_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/org/springframework/boot/Step6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/org/springframework/boot/autoconfigure/web/servlet/A35.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/java/org/springframework/boot/autoconfigure/web/servlet/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/banner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/static/r2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/step3.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/templates/test3.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/templates/test4.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/src/main/resources/templates/view2.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/a02.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/b03.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/banner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a01/Component1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a01/UserRegisteredEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a02/A02$Bean1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a02/TestBeanFactory$Bean2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a02/TestBeanFactory$Inter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a03/A03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a03/LifeCycleBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a03/MyBeanPostProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a03/TestProcessOrder$P3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a03/TestProcessOrder$P4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a04/Bean2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a05/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a05/component/Bean2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a05/mapper/Mapper2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a06/A06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a06/MyConfig1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a08/A08.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a08/BeanForSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a08/sub/E.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a08/sub/F3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a08/sub/F4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a12/A12$Foo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a12/TestMethodInvoke.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a13/A13$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a15/A15$Target1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a15/A15$Target2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a15/A15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a15/A15_1$MyConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a15/A15_2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a16/A16$T3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a20/Controller1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a20/TokenArgumentResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/com/itheima/a20/YmlReturnValueHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/step3.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/step4.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/step6.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../show/target/classes/templates/test4.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../softwork/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../softwork/Junit/Junit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../softwork/softwork.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sprint6/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sprint6/dynamic-proxy-jdk/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sprint6/dynamic-proxy-jdk/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sprint6/spring6-001/src/test/java/com/paranoid/spring6/test/FirstTestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sprint6/spring6-001/target/classes/com/paranoid/spring6/bean/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssaw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-springmvc/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-springmvc/springmvc-01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-springmvc/springmvc-01/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/.idea/restaurant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/.idea/tests.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/restaurant_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/restaurant_war_exploded/WEB-INF/classes/com/paranoid/controller/OutServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/restaurant_war_exploded/WEB-INF/classes/com/paranoid/controller/UploadServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/restaurant_war_exploded/WEB-INF/classes/com/paranoid/controller/VerificationServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/restaurant_war_exploded/WEB-INF/classes/com/paranoid/utils/ExpLevelCaculate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/restaurant_war_exploded/WEB-INF/classes/com/paranoid/utils/MyConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/restaurant_war_exploded/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/test_war_exploded/WEB-INF/classes/com/paranoid/utils/GenericVerification.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/test_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/out/artifacts/test_war_exploded/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/src/main/java/com/paranoid/pojo/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/src/main/java/com/paranoid/utils/GenericVerification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/src/main/java/com/paranoid/utils/MyConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/target/classes/com/paranoid/controller/UploadServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/target/classes/com/paranoid/pojo/LevelInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/target/classes/com/paranoid/utils/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/target/classes/com/paranoid/utils/MyConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/restaurant/web/a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tests/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhangsan/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zhangsan/untitled1.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../software/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ZUM5U1VSLHbQt6OsDmx1OpmKuQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/java/聊天室/代码/itheima_chat",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.14971977",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "fb342693b45db6e06ba8ec9604304192",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/chat/web.html" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=utf-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="chat">
+          <settings>
+            <option name="CONTEXT_PATH" value="/chat" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="acfd1285-0cfb-4317-bbce-855b31f3d2c1" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62846" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="chat" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7b2a4f3-9f96-4735-b65e-af03dbf4b79b" name="Changes" comment="" />
+      <created>1702472021323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702472021323</updated>
+      <workItem from="1702472022409" duration="3986000" />
+      <workItem from="1702478243235" duration="777000" />
+      <workItem from="1702479243911" duration="5336000" />
+      <workItem from="1702554583321" duration="340000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
