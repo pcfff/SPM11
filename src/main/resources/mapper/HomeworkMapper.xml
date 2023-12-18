@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teachingplatform.mapper.HomeworkMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.teachingplatform.entity.Homework">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="courseId" column="course_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="deadline" column="deadline" jdbcType="TIMESTAMP"/>
+        <result property="questionIds" column="question_ids" jdbcType="OTHER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="correct" column="correct" jdbcType="TINYINT"/>
+        <result property="type" column="type" jdbcType="TINYINT"/>
+    </resultMap>
+    <insert id="insert">
+        insert into homework(course_id, user_id, name, deadline, question_ids, create_time, correct, type)
+        values (#{courseId}, #{userId}, #{name}, #{deadline}, #{questionIds}, #{createTime}, #{correct}, #{type})
+    </insert>
+
+    <update id="updateById">
+        update homework
+        <set>
+            <if test="courseId!= null">
+                course_id = #{courseId},
+            </if>
+            <if test="userId!= null">
+                user_id = #{userId},
+            </if>
+            <if test="name!= null and name!= ''">
+                name = #{name},
+            </if>
+            <if test="deadline!= null">
+                deadline = #{deadline},
+            </if>
+            <if test="questionIds!= null">
+                question_ids = #{questionIds},
+            </if>
+            <if test="correct!= null">
+                correct = #{correct},
+            </if>
+            <if test="type!= null">
+                type = #{type},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="removeById">
+        delete
+        from homework
+        where id = #{id}
+    </delete>
+
+    <select id="getPageList" resultType="com.example.teachingplatform.dto.HomeworkDTO">
+        select homework.id,
+        course_id,
+        homework.user_id,
+        homework.name,
+        deadline,
+        question_ids,
+        homework.create_time,
+        course.name courseName,
+        correct, type
+        from homework
+        left join course on homework.course_id = course.id
+        <where>
+            <if test="id != null">
+                and homework.id = #{id}
+            </if>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="userId != null">
+                and homework.user_id = #{userId}
+            </if>
+            <if test="name != null and name != ''">
+                and homework.name like concat('%', #{name}, '%')
+            </if>
+            <if test="deadline != null">
+                and deadline = #{deadline}
+            </if>
+            <if test="questionIds != null and questionIds != ''">
+                and question_ids = #{questionIds}
+            </if>
+            <if test="type != null">
+                and type = #{type}
+            </if>
+            <if test="correct != null">
+                and correct = #{correct}
+            </if>
+        </where>
+    </select>
+    <select id="getById" resultMap="BaseResultMap">
+        select id,
+               course_id,
+               user_id,
+               name,
+               deadline,
+               question_ids,
+               create_time,
+               type,
+               correct
+        from homework
+        where id = #{id}
+    </select>
+</mapper>

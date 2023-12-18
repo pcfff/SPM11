@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teachingplatform.mapper.HomeworkSubmitMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.teachingplatform.entity.HomeworkSubmit">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="homeworkId" column="homework_id" jdbcType="INTEGER"/>
+        <result property="questionId" column="question_id" jdbcType="INTEGER"/>
+        <result property="score" column="score" jdbcType="INTEGER"/>
+        <result property="correct" column="correct" jdbcType="TINYINT"/>
+        <result property="answer" column="answer" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="status" column="status" jdbcType="TINYINT"/>
+    </resultMap>
+
+
+    <insert id="saveBatch">
+        insert into homework_submit(user_id, homework_id, question_id, score, answer, create_time, status, correct)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.userId}, #{item.homeworkId}, #{item.questionId}, #{item.score}, #{item.answer}, #{item.createTime},
+            #{item.status}, #{item.correct})
+        </foreach>
+    </insert>
+    <update id="updateById">
+        update homework_submit
+        <set>
+            <if test="userId!= null">
+                user_id = #{userId},
+            </if>
+            <if test="homeworkId!= null">
+                homework_id = #{homeworkId},
+            </if>
+            <if test="questionId!= null">
+                question_id = #{questionId},
+            </if>
+            <if test="score!= null">
+                score = #{score},
+            </if>
+            <if test="answer!= null">
+                answer = #{answer},
+            </if>
+            <if test="createTime!= null">
+                create_time = #{createTime},
+            </if>
+            <if test="status!= null">
+                status = #{status},
+            </if>
+            <if test="correct!= null">
+                correct = #{correct},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <select id="getPageList" resultType="com.example.teachingplatform.dto.HomeworkSubmitDTO">
+        select name as studentName, temp.score, temp.create_time, student.user_id, temp.status
+        from student
+        left join (select sum(score) as score, max(create_time) create_time, user_id, min(status) status
+        from homework_submit
+        where homework_id = #{entity.homeworkId}
+        group by user_id) as temp on student.user_id = temp.user_id
+        where teacher_id = #{teacherId}
+        <if test="entity.studentName != null and entity.studentName != ''">
+            and student.name like concat('%', #{entity.studentName}, '%')
+        </if>
+        order by temp.create_time desc
+    </select>
+
+    <select id="list" resultMap="BaseResultMap">
+        select
+        id, user_id, homework_id, question_id, score, answer, create_time, status, correct
+        from homework_submit
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="homeworkId != null">
+                and homework_id = #{homeworkId}
+            </if>
+            <if test="questionId != null">
+                and question_id = #{questionId}
+            </if>
+            <if test="score != null">
+                and score = #{score}
+            </if>
+            <if test="answer != null and answer != ''">
+                and answer = #{answer}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teachingplatform.mapper.DictMapper">
+
+    <resultMap type="com.example.teachingplatform.entity.Dict" id="DictMap">
+        <result property="dictKey" column="dict_key"/>
+        <result property="dictValue" column="dict_value"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="DictMap">
+        select
+          dict_key, dict_value
+        from dict
+        where dict_key = #{dictKey}
+    </select>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update dict
+        <set>
+            <if test="dictValue != null and dictValue != ''">
+                dict_value = #{dictValue},
+            </if>
+        </set>
+        where dict_key = #{dictKey}
+    </update>
+
+
+</mapper>
+

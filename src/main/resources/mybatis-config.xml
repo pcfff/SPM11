@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <!--配置实体类包路径-->
+        <package name="com.example.teachingplatform.entity"/>
+    </typeAliases>
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <property name="helperDialect" value="mysql"/>
+            <property name="reasonable" value="true"/>
+            <property name="pageNum" value="10"/>
+        </plugin>
+    </plugins>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/teaching_platform?characterEncoding=UTF-8&amp;serverTimezone=GMT%2b8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <mappers>
+<!--        <package name="mapper" />-->
+        <mapper resource="mapper/CourseMapper.xml" />
+        <mapper resource="mapper/ExperimentMapper.xml" />
+        <mapper resource="mapper/HomeworkMapper.xml" />
+        <mapper resource="mapper/HomeworkSubmitMapper.xml" />
+        <mapper resource="mapper/QuestionMapper.xml" />
+        <mapper resource="mapper/StudentMapper.xml" />
+        <mapper resource="mapper/TeacherMapper.xml" />
+        <mapper resource="mapper/UserMapper.xml" />
+        <mapper resource="mapper/ExperimentCommentMapper.xml" />
+        <mapper resource="mapper/NoticeMapper.xml" />
+        <mapper resource="mapper/CourseResourceMapper.xml" />
+        <mapper resource="mapper/DictMapper.xml" />
+    </mappers>
+
+</configuration>

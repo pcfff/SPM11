@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teachingplatform.mapper.ExperimentCommentMapper">
+
+    <resultMap type="com.example.teachingplatform.entity.ExperimentComment" id="ExperimentCommentMap">
+        <result property="id" column="id"/>
+        <result property="content" column="content"/>
+        <result property="userId" column="user_id"/>
+        <result property="replyId" column="reply_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="experimentId" column="experiment_id"/>
+    </resultMap>
+
+    <resultMap type="com.example.teachingplatform.dto.ExperimentCommentDTO" id="ExperimentCommentTreeMap">
+        <result property="id" column="id"/>
+        <result property="content" column="content"/>
+        <result property="userId" column="user_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="experimentId" column="experiment_id"/>
+        <collection property="commentList" column="id"
+            ofType="com.example.teachingplatform.dto.ExperimentCommentChildDTO"
+            javaType="java.util.List"
+            select="com.example.teachingplatform.mapper.ExperimentCommentMapper.selectByReplyId"
+        />
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ExperimentCommentMap">
+        select
+          id, content, user_id, reply_id, create_time, experiment_id
+        from experiment_comment
+        where id = #{id}
+    </select>
+
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultType="com.example.teachingplatform.dto.ExperimentCommentChildDTO">
+        select
+        experiment_comment.id, content, user_id, experiment_comment.create_time, experiment_id, username
+        from experiment_comment
+        left join user u on u.id = experiment_comment.user_id
+        <where>
+            <if test="id != null">
+                and experiment_comment.id = #{id}
+            </if>
+            <if test="content != null and content != ''">
+                and content = #{content}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="username != null and username != ''">
+                and username like concat('%', #{username}, '%')
+            </if>
+            <if test="createTime != null">
+                and experiment_comment.create_time = #{createTime}
+            </if>
+            <if test="experimentId != null">
+                and experiment_id = #{experimentId}
+            </if>
+        </where>
+    </select>
+
+    <select id="list" resultMap="ExperimentCommentTreeMap">
+        select
+            experiment_comment.id, reply_id, content, username, user_id, experiment_comment.create_time, experiment_id
+        from experiment_comment
+                 left join user u on u.id = experiment_comment.user_id
+        <where>
+             and reply_id is null
+            <if test="id != null">
+                and experiment_comment.id = #{id}
+            </if>
+            <if test="content != null and content != ''">
+                and content = #{content}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="replyId != null">
+                and reply_id = #{replyId}
+            </if>
+            <if test="createTime != null">
+                and experiment_comment.create_time = #{createTime}
+            </if>
+            <if test="experimentId != null">
+                and experiment_id = #{experimentId}
+            </if>
+        </where>
+    </select>
+    <select id="selectByReplyId" resultType="com.example.teachingplatform.dto.ExperimentCommentChildDTO">
+        select
+            experiment_comment.id, content, username, user_id, experiment_comment.create_time, experiment_id
+        from experiment_comment
+        left join user u on u.id = experiment_comment.user_id
+        where reply_id = #{replyId}
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into experiment_comment(content, user_id, reply_id, create_time, experiment_id)
+        values (#{content}, #{userId}, #{replyId}, #{createTime}, #{experimentId})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update experiment_comment
+        <set>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="replyId != null">
+                reply_id = #{replyId},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="experimentId != null">
+                experiment_id = #{experimentId},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from experiment_comment where id = #{id}
+    </delete>
+
+</mapper>
+

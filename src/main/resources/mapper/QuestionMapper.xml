@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teachingplatform.mapper.QuestionMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.teachingplatform.entity.Question">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="type" column="type" jdbcType="INTEGER"/>
+        <result property="options" column="options" jdbcType="OTHER"/>
+        <result property="score" column="score" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="courseId" column="course_id" jdbcType="INTEGER"/>
+        <result property="answer" column="answer" jdbcType="VARCHAR"/>
+        <result property="detail" column="detail" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,name,type,
+        options,score,user_id,
+        course_id,answer,detail
+    </sql>
+    <insert id="save">
+        insert into question(name, type, options, score, user_id, course_id, answer, detail)
+        values (#{name}, #{type}, #{options}, #{score}, #{userId}, #{courseId}, #{answer}, #{detail})
+    </insert>
+    <update id="updateById">
+        update question
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="type != null">
+                type = #{type},
+            </if>
+            <if test="options != null and options != ''">
+                options = #{options},
+            </if>
+            <if test="score != null">
+                score = #{score},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="courseId != null">
+                course_id = #{courseId},
+            </if>
+            <if test="answer != null and answer != ''">
+                answer = #{answer},
+            </if>
+            <if test="detail != null and detail != ''">
+                detail = #{detail},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <delete id="removeById">
+        delete from question where id = #{id}
+    </delete>
+    <select id="getPageList" resultType="com.example.teachingplatform.dto.QuestionDTO">
+        select question.id
+                ,question.name,type,
+               options,question.score,question.user_id,
+               course_id,answer,detail, course.name courseName
+        from question
+                 left join course on question.course_id = course.id
+        <where>
+            <if test="id != null">
+                and question.id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and question.name like concat('%', #{name}, '%')
+            </if>
+            <if test="type != null">
+                and type = #{type}
+            </if>
+            <if test="options != null and options != ''">
+                and options = #{options}
+            </if>
+            <if test="score != null">
+                and question.score = #{score}
+            </if>
+            <if test="userId != null">
+                and question.user_id = #{userId}
+            </if>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="answer != null and answer != ''">
+                and answer = #{answer}
+            </if>
+            <if test="detail != null and detail != ''">
+                and detail = #{detail}
+            </if>
+        </where>
+    </select>
+    <select id="list" resultMap="BaseResultMap">
+        select
+        id, name, type, options, score, user_id, course_id, answer, detail
+        from question
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="type != null">
+                and type = #{type}
+            </if>
+            <if test="options != null and options != ''">
+                and options = #{options}
+            </if>
+            <if test="score != null">
+                and score = #{score}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="answer != null and answer != ''">
+                and answer = #{answer}
+            </if>
+            <if test="detail != null and detail != ''">
+                and detail = #{detail}
+            </if>
+        </where>
+    </select>
+    <select id="getById" resultMap="BaseResultMap" >
+        select
+        id, name, type, options, score, user_id, course_id, answer, detail
+        from question
+        where id = #{id}
+    </select>
+
+</mapper>

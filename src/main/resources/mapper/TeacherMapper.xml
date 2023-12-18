@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.teachingplatform.mapper.TeacherMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.teachingplatform.entity.Teacher">
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="num" column="num" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="major" column="major" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,num,phone,
+        sex,name,age,
+        major
+    </sql>
+    <update id="saveOrUpdate">
+        insert into teacher(user_id,num,phone,sex,name,age,major)
+        values (#{userId},#{num},#{phone},#{sex},#{name},#{age},#{major})
+        on duplicate key update
+            num = #{num},
+            phone = #{phone},
+            sex = #{sex},
+            name = #{name},
+            age = #{age},
+            major = #{major}
+    </update>
+    <select id="getById" resultMap="BaseResultMap" >
+        select
+            user_id, num, phone, sex, name, age, major
+        from teacher
+        where user_id = #{userId}
+    </select>
+
+    <select id="list" resultMap="BaseResultMap">
+        select
+        user_id, num, phone, sex, name, age, major
+        from teacher
+        <where>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="num != null and num != ''">
+                and num = #{num}
+            </if>
+            <if test="phone != null and phone != ''">
+                and phone = #{phone}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="age != null">
+                and age = #{age}
+            </if>
+            <if test="major != null and major != ''">
+                and major = #{major}
+            </if>
+        </where>
+    </select>
+</mapper>
